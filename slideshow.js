@@ -16,7 +16,7 @@
 
     var imageList = ["","",""];
     var test = window.location.href;
-    var str_after = test.split("?")[1];
+    var str_after = test.split("=")[1];
     console.alert(str_after);
      $.ajax({
             type:"post",
