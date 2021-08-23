@@ -17,7 +17,7 @@
     var imageList = ["","",""];
     var test = window.location.href;
     var str_after = test.split("=")[1];
-    console.alert(str_after);
+    console.log(str_after);
      $.ajax({
             type:"post",
             url:"https://z9alk1vin0.execute-api.ap-northeast-1.amazonaws.com/get/",
