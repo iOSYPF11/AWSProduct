@@ -12,9 +12,12 @@
      * 4.当滑动的距离不超过一定的距离的时候  需要吸附回去  过渡的形式去做
      * 5.当滑动超过了一定的距离  需要 跳到 下一张或者上一张  （滑动的方向） 一定的距离（屏幕的三分之一）
      * */
+
+
     var imageList = ["","",""];
     var test = window.location.href;
     var str_after = test.split("?")[1];
+    console.alert(str_after);
      $.ajax({
             type:"post",
             url:"https://z9alk1vin0.execute-api.ap-northeast-1.amazonaws.com/get/",
