@@ -18,7 +18,8 @@
      $.ajax({
             type:"post",
             url:"https://z9alk1vin0.execute-api.ap-northeast-1.amazonaws.com/get/",
-            data:{productNo:"NR21SS06002-1102"},
+            data:JSON.stringify({productNo:str_after}),
+            dataType: "json",
             contentType: "application/json",
             async:true,
             success:function(data){
