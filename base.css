@@ -1,0 +1,16 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;/*兼容移动端主流浏览器*/
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;/*清除移动端点击高亮效果*/
+}
+.textStyle{
+		/*text-align: center;*/
+		font-size: 18px;
+		color: black;
+		padding-left: 15px;
+		padding-top: 10px;
+	}

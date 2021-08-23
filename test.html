@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商品官网</title>
+    <!-- <link rel="stylesheet" href="slideshow.css"> -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>s
+
+<body>
+
+<div class="layout">
+    <div style="font-size: 24px;font-weight: bold;color: #000E1D; align-content: center;padding-left: 15px;padding-top: 28px;padding-right:15px;text-align: center;">
+        Necessary Ananke
+    </div>
+
+    <div class="banner" style="padding-top: 15px;">
+        <ul id="sdimage">
+        </ul>
+        <ul id = "dot">
+            <li class="now"></li>
+        </ul>
+    </div>
+
+    <!-- <div><img id = "goodimage" src="image/gooddetail.jpeg" width="100%" height="100%" vspace="15px" />
+    </div> -->
+
+    <div style="position:relative;">
+        <div style="position:absolute ;left:15px;right: 15px;top: -40px;font-style: oblique; font-size: 34px;color: #000E1D;font-weight: bold;">
+            <p id ="goodname_en"></p>
+       
+        <div style="padding-top: 10px;font-size: 24px;color: #000E1D;font-weight: bold;font-style: normal;">
+             <p id ="goodname"></p>
+       </div>
+
+        <div style="padding-top: 10px;font-size: 14px;color: #000E1D;font-style: normal;">
+
+            <p id ="goodnum"></p>
+        </div>
+        <div  style="position:relative;padding-top:15px;"><img id = "authimage" src="" width="100%" height="100%" vspace="15px" />
+            <div style="position:absolute ;left:15px;top:20px; right: 15px;font-style: normal; font-size: 32px;color: white;font-weight: bold;text-align: center;">
+                <p id ="auth"></p>
+                </div>
+         </div>
+        <div style="padding-top: 30px; font-style: oblique;font-size:32px;color: #000E1D;font-weight: bold;">
+        about us</div>
+
+        <div style="position:relative;">
+            <div style="top: -20px;position:absolute;">
+                <div style="padding-left:15px;padding-top: 15px;padding-right: 15px; font-size:12px;color: #000E1D;background-color: rgba(0,14,29,0.05);font-family: SFProText-Regular; font-style: normal;">
+                    <b> color="#000E1D" size="2"><br>Necessary Necessary Ananke是来自中国的轻奢时装品牌，公司位于英国伦敦。以高科技和优雅的设计融合了风格和传统；设计、生产、发售、时尚与舒适结合的高级女装。<br><br>
+     ”Ananke”这个名字来自一位古希腊女神，作为神话中的原始神，她是”命运，定数和必然”的神格化，也是英文”Necessity”的来源。Ananke手握纺锤，纺锤本身便是时装与设计的基础，体现了品牌具有独特的设计与精湛工艺和品质；她同时有着人身和蛇形的化身，蛇不但是聪慧，也是魅力的体现，代表着品牌设计的耀眼和美丽。这亦是Necessary Ananke的精髓和灵魂。<br><br>作为具有前瞻性的创意时装品牌，Necessary Ananke有着才华横溢的设计师团队，毕业于顶尖时尚学院，在多个欧洲高定品牌工作，将自己的独特见解糅合于时装设计，让品牌形成清晰鲜明的风格走向。<br><br></font>              </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="base.js"></script>
+
+<script src="slideshow.js"></script>
+
+
+<!-- <script>
+
+    let list = ["http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg"]
+    for(var i=0;i<list.length;i++){
+                $("#tuu"+[i]).attr('src',"http://img.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg")
+               
+    }
+
+</script> -->
+<!-- <script>
+
+    var test = window.location.href;
+    alert(test);
+    var test = window.location.search;
+
+    
+    var url = "http://i.cnblogs.com/EditPosts.aspx?opt=1";//获取url中"?"符后的字串
+
+// alert('前：' + str_before + ' - 后：' + str_after);
+
+// https://midapi-test.maxim-dps.com/api/MaximEID/CheckUniqueID?uniqueId=046e8da2246980
+    var str_before = url.split("?")[0];
+     var str_after = url.split("?")[1];
+        $.ajax({
+            type:"get",
+            url:"https://km-tninfo.tpyzq.com/news/hkstocks?classno=5&limit=20&page=1",
+            async:true,
+            success:function(data){
+                // alert(data["message"])
+                document.getElementById("goodname").innerHTML = data["message"];
+            },error:function(data){
+                // alert(data)
+                document.getElementById("goodname").innerHTML = "内容1111";
+            }
+        });
+    
+
+    
+    document.getElementById("goodnum").innerHTML = "222222";
+    document.getElementById("goodimage").src = "http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg";
+</script> -->
+
+</body>
+</html>
