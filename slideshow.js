@@ -27,7 +27,7 @@
             async:true,
             success:function(data){
                 console.log(data)
-                alert(data)
+                
                 document.getElementById("goodname_en").innerHTML = data["Items"][0]["productEnName"];
                 document.getElementById("goodname").innerHTML = data["Items"][0]["productChName"];
                 document.getElementById("goodnum").innerHTML = "("+data["Items"][0]["productNo"]+")";
