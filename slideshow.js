@@ -209,17 +209,17 @@ function convertOffset(x, y, degrees) {
     var str_after = test.split("=")[1];
     console.log(str_after);
     var opts = {
-        lines: 13, // 花瓣数目
-         length: 20, // 花瓣长度
-         width: 10, // 花瓣宽度
-         radius: 30, // 花瓣距中心半径
+        lines: 10, // 花瓣数目
+         length: 10, // 花瓣长度
+         width: 5, // 花瓣宽度
+         radius: 15, // 花瓣距中心半径
          scale: 1,
         corners: 1, // 花瓣圆滑度 (0-1)
          color: '#95ff66', // 花瓣颜色
          opacity: 0.25,
-        rotate: 0, // 花瓣旋转角度
+        rotate: 2, // 花瓣旋转角度
          direction: 1, // 花瓣旋转方向 1: 顺时针, -1: 逆时针
-         speed: 1, // 花瓣旋转速度
+         speed: 0.5, // 花瓣旋转速度
          trail: 60, // 花瓣旋转时的拖影(百分比)
          zIndex: 2e9, // spinner的z轴 (默认是2000000000)
          className: 'spinner', // spinner css 样式名称
