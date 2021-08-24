@@ -9,16 +9,19 @@
     <!-- <link rel="stylesheet" href="slideshow.css"> -->
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="slideshow.css">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 </head>
 
 <body>
+    
 
 <div class="layout">
     <div style="font-size: 24px;font-weight: bold;color: #000E1D; align-content: center;padding-left: 15px;padding-top: 28px;padding-right:15px;text-align: center;">
         Necessary Ananke
     </div>
+    <view id="loading" style="align-items: center;"></view>
 
     <div class="banner" style="padding-top: 15px;">
         <ul id="sdimage">
@@ -63,50 +66,8 @@
 
 <script src="base.js"></script>
 
+
 <script src="slideshow.js"></script>
-
-
-<!-- <script>
-
-    let list = ["http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg","http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg"]
-    for(var i=0;i<list.length;i++){
-                $("#tuu"+[i]).attr('src',"http://img.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg")
-               
-    }
-
-</script> -->
-<!-- <script>
-
-    var test = window.location.href;
-    alert(test);
-    var test = window.location.search;
-
-    
-    var url = "http://i.cnblogs.com/EditPosts.aspx?opt=1";//获取url中"?"符后的字串
-
-// alert('前：' + str_before + ' - 后：' + str_after);
-
-// https://midapi-test.maxim-dps.com/api/MaximEID/CheckUniqueID?uniqueId=046e8da2246980
-    var str_before = url.split("?")[0];
-     var str_after = url.split("?")[1];
-        $.ajax({
-            type:"get",
-            url:"https://km-tninfo.tpyzq.com/news/hkstocks?classno=5&limit=20&page=1",
-            async:true,
-            success:function(data){
-                // alert(data["message"])
-                document.getElementById("goodname").innerHTML = data["message"];
-            },error:function(data){
-                // alert(data)
-                document.getElementById("goodname").innerHTML = "内容1111";
-            }
-        });
-    
-
-    
-    document.getElementById("goodnum").innerHTML = "222222";
-    document.getElementById("goodimage").src = "http://www.juimg.com/tuku/yulantu/140703/330746-140F301555752.jpg";
-</script> -->
 
 </body>
 </html>
